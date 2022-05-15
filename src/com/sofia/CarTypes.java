@@ -123,7 +123,7 @@ public class CarTypes {
 		
 		System.out.println("----------------------------------------------------");
 		
-		//For Object-3:: carGolf
+	//For Object-3:: carGolf
 		System.out.println(carGolf.toString());
 		int IsG = carGolf.increaseSpeed(80);
 		int DsG = carGolf.decreaseSpeed(30);
