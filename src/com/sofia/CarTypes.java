@@ -9,7 +9,7 @@ class Car{
 	private String color;
 	private int speed;
 	
-	//Step-2: Generate Non-Parameterised Constructor
+	//Step-2: Generate Non-Parameterized Constructor
 	
 	public Car() {
 		
