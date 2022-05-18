@@ -16,17 +16,17 @@ class Car{
 	}
 
 	//Step-3: Generate Parameterised Constructor
-	
-	public Car(String type, String model, String color) {
+   public Car(String type, String model, String color) {
 		
 		this.type = type;
 		this.model = model;
 		this.color = color;
-		
+		//this.speed = speed;
 	}
-	//Step-4: Generate Getter And Setter 
+
 	
-	public String getType() {
+	//Step-4: Generate Getter And Setter 
+   public String getType() {
 		return type;
 	}
 
@@ -50,6 +50,16 @@ class Car{
 		this.color = color;
 	}
 
+	public int getSpeed() {
+		return speed;
+	}
+
+	public void setSpeed(int speed) {
+		this.speed = speed;
+	}
+
+	
+
 	//Step-5 : Generate ToString Method
 	@Override
 	public String toString() {
@@ -58,6 +68,7 @@ class Car{
 	
 	
 
+	
 	//Step-6 :Define Method increaseSpeed()
 	public int increaseSpeed(int increment) {
 		if(increment > 0) {
@@ -69,6 +80,9 @@ class Car{
 		
 	}
 	
+
+	
+
 	//Step-7 :Define Method decreaseSpeed()
 	public int decreaseSpeed(int decrement) {
 		if(decrement > 0 && decrement <= this.speed) {
@@ -102,8 +116,8 @@ public class CarTypes {
 		
 	//For Object-1:: carFocus	
 		System.out.println(carFocus.toString());
-		int IsF = carFocus.increaseSpeed(19);
-		int DsF = carFocus.decreaseSpeed(10);
+		int IsF = carFocus.increaseSpeed(37);
+		int DsF = carFocus.decreaseSpeed(25);
 		System.out.println("Increase Speed of Ford :: " + IsF);
 		System.out.println("Decrease Speed of Ford :: " + DsF);
 		carFocus.playMusic();
@@ -115,7 +129,7 @@ public class CarTypes {
 	//For Object-2:: carAuris	
 		System.out.println(carAuris.toString());
 		int IsA = carAuris.increaseSpeed(40);
-		int DsA = carAuris.decreaseSpeed(10);
+		int DsA = carAuris.decreaseSpeed(20);
 		System.out.println("Increase Speed of Toyota :: " + IsA);
 		System.out.println("Decrease Speed of Toyota :: " + DsA);
 		carAuris.playMusic();
@@ -125,10 +139,10 @@ public class CarTypes {
 		
 	//For Object-3:: carGolf
 		System.out.println(carGolf.toString());
-		int IsG = carGolf.increaseSpeed(80);
+		int IsG = carGolf.increaseSpeed(-3);
 		int DsG = carGolf.decreaseSpeed(30);
-		System.out.println("Increase Speed of Toyota :: " + IsG);
-		System.out.println("Decrease Speed of Toyota :: " + DsG);
+		System.out.println("Increase Speed of Volkswagen :: " + IsG);
+		System.out.println("Decrease Speed of Volkswagen :: " + DsG);
 		carGolf.playMusic();
 		carGolf.stopMusic();
 				
